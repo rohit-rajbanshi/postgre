@@ -1,0 +1,9 @@
+applications:
+  - name: mypostgre-app
+    buildpack: java_buildpack
+    path: target/mypostgre-app-0.0.1.jar
+    services:
+      - rohit_rajbanshi-postgre-instance
+      
+env:
+   SPRING_PROFILES_ACTIVE : cloud
